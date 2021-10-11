@@ -1,15 +1,12 @@
 /*
  ***************************************************************************************************************************************
-                               OOPD
-                           *************   
-                             Assignement 2.
-                         ********************  
-                             Group62.
-                       **************************     
-  Member: 1                          Member: 2
-  Name: Nitesh Naresh Narwade        Name: Ariba Ansari
-  RollNo: MT20329                    RollNo: MT20336 
-  Branch: CB                         Branch: CB 
+                             Covid-19-System-Managment-in-JAVA-with-opps-concepts  
+                           ********************************************************   
+                                         By. Nitesh Nresh Narwade
+                         ***********************************************************  
+                        Email ID: nitesh20329@iiitd.ac.in , darkshadow11041994@gmail.com 
+                      **********************************************************************   
+                  
  ****************************************************************************************************************************************
  */
 import java.util.Scanner;
@@ -303,7 +300,7 @@ class Portal2 extends Portal1{
 		  //System.out.println("Welcome " + array_of_user+",");
 	      System.out.println("                ");
 		  System.out.println("You're being tested for the " + wave_no+"st wave for the "+ Virus_Variant +" variant of the virus:");
-		  System.out.println("Vaccine’s BOOST : "+ Vaccine_BOOST + "| Vaccine’s DURABILITY : " + Vaccine_DURABILITY+"| Virus’s LIFE : " + Virus_LIFE + "| Virus Variant : " + Virus_Variant);
+		  System.out.println("VaccineÂ’s BOOST : "+ Vaccine_BOOST + "| VaccineÂ’s DURABILITY : " + Vaccine_DURABILITY+"| VirusÂ’s LIFE : " + Virus_LIFE + "| Virus Variant : " + Virus_Variant);
 		  System.out.println("                ");
 		  //Please_select_an_action(Inject, Effect, Exist);
   }
@@ -316,14 +313,14 @@ class Portal2 extends Portal1{
   public void Current_Result(int Vaccine_DURABILITY, int Virus_LIFE, int reducelife) {
 	  System.out.println("                ");
 	  System.out.println("Your vaccine is boosted and it reduces the life of the virus by " + reducelife);
-	  System.out.println("Vaccine’s DURABILITY : " + Vaccine_DURABILITY + "|" + "Virus’s LIFE :" + Virus_LIFE);
+	  System.out.println("VaccineÂ’s DURABILITY : " + Vaccine_DURABILITY + "|" + "VirusÂ’s LIFE :" + Virus_LIFE);
 	  System.out.println("                ");
   }
   public void Updated_Result(int Vaccine_DURABILITY, int Virus_LIFE, int randomnumber) {
 	  System.out.println("                ");
-	  System.out.println("VIRUS’s ACTION !");
-	  System.out.println("Virus reduces the vaccine’s DURABILITY by " + randomnumber);
-	  System.out.println("Vaccine’s DURABILITY : " + Vaccine_DURABILITY + " |" + "Virus’s LIFE : " + Virus_LIFE);
+	  System.out.println("VIRUSÂ’s ACTION !");
+	  System.out.println("Virus reduces the vaccineÂ’s DURABILITY by " + randomnumber);
+	  System.out.println("VaccineÂ’s DURABILITY : " + Vaccine_DURABILITY + " |" + "VirusÂ’s LIFE : " + Virus_LIFE);
 	  System.out.println("                "); 
   }
   public int Random_number(int min, int max) {
@@ -332,12 +329,12 @@ class Portal2 extends Portal1{
 	  return random_number;
   }
   public void DurabilityZero(int durabilityzero, int viruslife, String virusvariant) {
-	  //System.out.println("Vaccine’s DURABILITY : " + durabilityzero + " |" + " Virus’s LIFE : " + viruslife);
+	  //System.out.println("VaccineÂ’s DURABILITY : " + durabilityzero + " |" + " VirusÂ’s LIFE : " + viruslife);
 	  System.out.println("                ");
 	  System.out.println("Oops! Your vaccine fails to affect the " + virusvariant + ".");
 	  System.out.println("However, The vaccine helps you fight against several attacks of the virus and proves to");
 	  System.out.println("be useful. This shows how important the vaccine is in the fight against COVID-19.");
-	  System.out.println("Thanks for your participation. Now Let’s get Vaccinated !!!");
+	  System.out.println("Thanks for your participation. Now LetÂ’s get Vaccinated !!!");
 	  System.out.println("                ");
   } 
   public void VIRUSLIFE() {
@@ -346,7 +343,7 @@ class Portal2 extends Portal1{
 	  System.out.println("Vaccine proves to be effective during the fourth wave!!!");
 	  System.out.println("Congratulations, your vaccine has overpowered all the variants of the virus and hence");
 	  System.out.println("has proved to be effective in all the waves. Great Job!");
-	  System.out.println("Thanks for your participation. Now let’s get Vaccinated !!!");
+	  System.out.println("Thanks for your participation. Now letÂ’s get Vaccinated !!!");
 	  System.out.println("                "); 
   }
   public void Exit_at_wave_no(int wave_no) {
@@ -446,8 +443,8 @@ class Portal3 extends Portal2{
 				  //for EFFECT		
 					//Current_Result(vaccinedurability, viruslife);
 				    
-					System.out.println("Virus’s action reduced by "  + reduceeffect);
-					System.out.println("Vaccine’s DURABILITY : " + vaccinedurability + "|" + "Virus’s LIFE :" + viruslife);
+					System.out.println("VirusÂ’s action reduced by "  + reduceeffect);
+					System.out.println("VaccineÂ’s DURABILITY : " + vaccinedurability + "|" + "VirusÂ’s LIFE :" + viruslife);
 					int Randomnumber = Random_number(min, max);
 					int newRandomnumber = Randomnumber - reduceeffect;
 					if(newRandomnumber<0) {
@@ -511,7 +508,7 @@ class Portal3 extends Portal2{
  * Now again we have use the some conditional statment where we satisfying the while condition having initial value j = 1.
  * If j value match with me.getCovishield (1st wave case and having varient alpha) then counter goes into the if else condition and max value will set for vaccindurability / 4 that is 25% of the vaccine durability and this max value is use to generate the random number. 
  * Now inside this "Enter_Registered_Username" is use which to print this data " You're being tested for the 1st wave for the Alpha variant of the virus:
- * Vaccine’s BOOST : 10| Vaccine’s DURABILITY : 100| Virus’s LIFE : 100| Virus Variant : Alpha"
+ * VaccineÂ’s BOOST : 10| VaccineÂ’s DURABILITY : 100| VirusÂ’s LIFE : 100| Virus Variant : Alpha"
  * me.functiong_of_logic_of_ALL(): This function do all the logical things that needs in program. AS this same code I was requiring at 4 different places I have just make the function in portal3 class and call here in VACCINATION class. This function already explained in the portal3 class in comments.   
  * This function is returning some value and that value we stored in value variable. 
  * If value <=0 then j increamnt by the 1 and second wave started it means that in the 1st wave we defeated the virus.
