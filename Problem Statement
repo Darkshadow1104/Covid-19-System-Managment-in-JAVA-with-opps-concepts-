@@ -1,0 +1,44 @@
+ In the current COVID 19 scenario, researchers have come up with many Vaccines in order to make people immune to COVID. However, we’ve heard of them being effective at different levels. An XYZ research organisation has asked you to implement an evaluation system for them where a citizen registers himself for COVID VACCINATION and by getting vaccinated beats the various variants of CoronaVirus. 
+Please NOTE that the implementation needs to include the following concepts:
+1. Inheritance 
+2. Encapsulation 
+
+SCENARIO 
+1. Each execution of the registration process will be considered separately. A user registers for Vaccination and on being registered he will log into the portal using his username and aadhar Number (Any randomly generated 16 digit Number will work). If the username is found to be registered, the user will be able to proceed with his actions otherwise his login will be discarded. 
+NOTE: You don’t have to build a separate UI for this or even store the data. All operations are expected to be performed in a single execution of the code. 
+2. The user must register with a username which will then be used for all further operations in the execution. Once logged in, he will have an option to choose one of four vaccines: Covisheild, Covaxin, Pfizer, Sputnik. All these vaccines have an immunity BOOST and DURABILITY attribute. BOOST is used to improve the vaccine’s effect on the patient and is initially 10 for every vaccine, Whereas DURABILITY indicates its effective time on the patient’s body and varies from 0 to 100 in a patient’s body. 
+3. There are different waves of the virus which diagnose the patient with different variants of COVID-19. The patient can be tested against the next waves by beating the current virus and gaining enough BOOST and DURABILITY for the next wave: 
+a. For wave 1: The Vaccine has 100 DURABILITY. The virus Variant is ALPHA b. For wave 2: The Vaccine has 150 DURABILITY. The Virus Variant is BETA c. For wave 3: The Vaccine has 200 DURABILITY. The virus Variant is GAMA d. For wave 4: The Vaccine has 250 DURABILITY. The Virus Variant is SIGMA
+
+VACCINE INFORMATION 
+There are 4 types of Vaccines with two characteristics - BOOST and DURABILITY. As described earlier, the DURABILITY characteristic is decided by the wave number. 
+Each of these vaccines has 2 actions - INJECT and EFFECT 
+1. Covishield 
+a. INJECT - Reduces the LIFE of the virus by 10 
+b. EFFECT - Reduces the next ATTACK of the virus by 10 
+2. Covaxin 
+a. INJECT - Reduces the LIFE of the virus by 5 
+b. EFFECT - Reduces the next ATTACK of the virus by 5 
+3. Pfizer 
+a. INJECT - Reduces the LIFE of the virus by 6 
+b. EFFECT - Reduces the next ATTACK of the virus by 4 
+4. Sputnik 
+a. INJECT - Reduces the LIFE of virus by 4 
+b. EFFECT - Reduces the next ATTACK of the virus by 8 
+
+VIRUS INFORMATION 
+There are variants of Virus with one characteristic - LIFE 
+Each of these vaccines has a single action - ATTACK 
+a. ALPHA Variant - Has a LIFE of 100 
+- ATTACK - Reduces the DURABILITY of vaccine by a random number generated between 0 and ¼ of its LIFE. 
+b. BETA Variant - Has a LIFE of 100 
+- ATTACK - Reduces the DURABILITY of vaccine by a random number generated between 0 and ¼ of its LIFE. 
+c. GAMA Variant - Has a LIFE of 200 
+- ATTACK - Reduces the DURABILITY of vaccine by a random number generated between 0 and ⅓ of its LIFE. 
+d. SIGMA Variant - Has a LIFE of 250
+- ATTACK - Reduces the DURABILITY of vaccine by a random number generated between 0 and ½ of its LIFE. 
+
+Working 
+Everytime the vaccine is tested in a particular wave, the patient is prompted with 3 options - INJECT, EFFECT, or QUIT. After he chooses his action, the Virus will perform his ATTACK. 
+If the Vaccines' DURABILITY reduces to or below 0, the process fails and the process ends there. 
+In order to become fully immune, the patient needs to become IMMUNE of all the variants of the VIRUS. He becomes Immune for a wave by completely demolishing the LIFE of the respective Virus variant. Once you have overpowered a variant, the vaccine can be tested against another variant available in the next wave. On moving to the next wave, the Vaccine’s DURABILITY restores to its maximum value for that wave, and its BOOST increments by a factor of BOOST*Wave Number from its current value. 
